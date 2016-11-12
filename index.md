@@ -7,6 +7,9 @@ layout: home
 
 ![image-title-here](/assets/images/portrait.png){:class="hero"}
 
+<div class="divider"></div>
+
+
 Sibylle Ruppert was born during an air raid on September 8th, 1942. It was the night of the first massive bombing of Frankfurt during World War II. With a numbered tag around her neck, Sibylle was, immediately, whisked from the maternity ward down to the bomb shelter in the basement, while her mother was moved to safety under a supporting column of the hospital staircase.
 
 She spent her infancy between the nursery and an improvised bomb shelter in which plaster fell from the ceiling whenever the bombs hit the neighborhood. In spring 1944 her parents decided to flee Frankfurt for the countryside. Sibylle’s first memories were of the shoving and screaming crowds on the platform of the train station desperately trying to climb into the overcrowded wagons.

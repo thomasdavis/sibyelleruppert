@@ -11,7 +11,11 @@ p {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
-
+.divider {
+  height: 7px;
+  margin: 20px 0;
+  background: #3f3f3f;
+}
 .container {
   width: 760px;
   margin: auto;
@@ -31,7 +35,7 @@ p {
 }
 .hero {
   width: 100%;
-  margin: 10px 0;
+  border: 1px solid #3f3f3f;
 }
 .gallery-list-photo {
   width: 200px;
@@ -40,17 +44,17 @@ p {
 .sidebar-left {
   position: fixed;
   height: 100vh;
-  width: 10px;
-  background: #001f3f;
-  left: calc(50% - 380px - 30px);
+  width: 7px;
+  background: #3f3f3f;
+  left: calc(50% - 380px - 30px + 7px);
   top: 0;
 }
 .sidebar-right {
   position: fixed;
   height: 100vh;
-  width: 10px;
-  background: #001f3f;
-  left: calc(50% + 380px + 30px);
+  width: 7px;
+  background: #3f3f3f;
+  left: calc(50% + 380px + 17px);
   top: 0;
 }
 .artwork {
@@ -58,22 +62,65 @@ p {
 
   padding: 0;
   margin: 40px 0;
+  li:nth-child(3n+1) .gallery-art-container {
+    padding-right: 15px;
+  }
+
+  li:nth-child(3n+2) .gallery-art-container {
+    padding: 0 7.5px;
+  }
+  li:nth-child(3n+3) .gallery-art-container {
+    padding-left: 15px;
+  }
   li {
     float: left;
     width: 33%;
     img {
+      border: 1px solid #fbfbfb;
       width: 100%;
+      &:hover {
+        filter: blur(1px);
+      }
     }
     .gallery-art-container {
-      padding: 15px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
       display: block;
+      cursor: pointer;
       .post-title {
         margin-top: 10px;
         display: block;
       }
       .post-meta {
+        color: #001f3f;
+        font-weight: 400;
+        margin-top: 5px;
         display: block;
       }
     }
+  }
+}
+.artwork-item {
+  img {
+    width: 100%;
+  }
+  .artwork-backdrop {
+    padding: 7px;
+    background: #3f3f3f;
+  }
+}
+.post {
+  h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .post-meta {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
   }
 }

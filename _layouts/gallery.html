@@ -8,10 +8,10 @@ layout: default
   <ul class="artwork">
     {% for post in site.posts %}
       <li>
-        <a class="gallery-art-container">
+        <a class="gallery-art-container" href="{{ post.url | relative_url }}">
 
             <!-- <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> -->
-            <img class="gallery-list-photo" src="http://res.cloudinary.com/dx3kbjr3g/image/fetch/w_200,h_200,c_fill,f_auto/http://sibylleruppert.com/assets/images/{{post.image}}" />
+            <img class="gallery-list-photo" src="http://res.cloudinary.com/dx3kbjr3g/image/fetch/w_200,h_201,c_fill,f_auto/http://sibylleruppert.com/assets/images/{{post.image}}" />
             <span class="post-title">{{ post.title }}</span>
             <span class="post-meta">{{ post.year }}</span>
           <div style="clear: both;"></div>
