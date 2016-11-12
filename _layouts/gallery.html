@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+  <ul class="artwork">
+    {% for post in site.posts %}
+      <li>
+        <a class="gallery-art-container">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {{post.year}}
+            <img class="gallery-list-photo" src="http://res.cloudinary.com/dx3kbjr3g/image/fetch/w_300,h_300,c_fill,g_face,r_max,f_auto/http://sibylleruppert.com/assets/images/{{post.image}}" />
+          </h2>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

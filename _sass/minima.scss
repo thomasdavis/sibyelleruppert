@@ -5,10 +5,15 @@ h1 a {
 a {
   font-family: 'Libre Baskerville', serif;
   color: #141823;
+  font-weight: bold;
+}
+p {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-  width: 960px;
+  width: 760px;
   margin: auto;
 }
 
@@ -26,4 +31,42 @@ a {
 }
 .hero {
   width: 100%;
+  margin: 10px 0;
+}
+.gallery-list-photo {
+  width: 200px;
+  float: left;
+
+}
+.sidebar-left {
+  position: fixed;
+  height: 100vh;
+  width: 10px;
+  background: #001f3f;
+  left: calc(50% - 380px - 30px);
+  top: 0;
+}
+.sidebar-right {
+  position: fixed;
+  height: 100vh;
+  width: 10px;
+  background: #001f3f;
+  left: calc(50% + 380px + 30px);
+  top: 0;
+}
+.artwork {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    float: left;
+    width: 33%;
+    outline: 1px solid black;
+    img {
+      width: 100%;
+    }
+    .gallery-art-container {
+      padding: 15px;
+    }
+  }
 }
