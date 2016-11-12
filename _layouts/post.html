@@ -10,10 +10,14 @@ layout: default
 
   <div class="artwork-item" itemprop="articleBody">
     <div class="artwork-backdrop">
-      <img src="http://res.cloudinary.com/dx3kbjr3g/image/fetch/w_800,c_fill,f_auto/http://sibylleruppert.com/assets/images/{{page.image}}" />
+      <a data-lightbox="roadtrip" data-title="{{page.title}} - {{page.year}}" href="http://res.cloudinary.com/dx3kbjr3g/image/fetch/f_auto/http://sibylleruppert.com/assets/images/{{page.image}}">
+      <img class="artwork-image" src="http://res.cloudinary.com/dx3kbjr3g/image/fetch/w_800,c_fill,f_auto/http://sibylleruppert.com/assets/images/{{page.image}}" />
+    </a>
     </div>
     {{ content }}
   </div>
+
+  <h2 style="margin: 40px 0 20px 0;">Discussion</h2>
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
