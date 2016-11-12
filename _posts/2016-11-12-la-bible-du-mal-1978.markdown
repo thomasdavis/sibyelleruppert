@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "La Bible du mal"
-date:   2016-11-12 17:52:42 +1100
 categories: jekyll update
 title: "La Bible du mal"
 year: 1978
