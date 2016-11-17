@@ -1,20 +1,31 @@
 
+$color-white: #DDDCC5;
+$color-grey: #958976;
+$color-red: #611427;
+$color-black: #1D2326;
+$color-dark-grey: #6A6A61;
+
+body {
+  background: $color-white;
+}
+
 h1 a {
   text-decoration: none;
 }
 a {
-  font-family: 'Libre Baskerville', serif;
-  color: #141823;
+  font-family: 'Aclonica', sans-serif;
+  color: $color-black;
   font-weight: bold;
 }
 p {
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  color: $color-black;
+  font-family: 'Slabo 27px', serif;
 }
 .divider {
   height: 7px;
   margin: 20px 0;
-  background: #3f3f3f;
+  background: $color-red;
 }
 .container {
   width: 760px;
@@ -45,7 +56,7 @@ p {
   position: fixed;
   height: 100vh;
   width: 7px;
-  background: #3f3f3f;
+  background: $color-red;
   left: calc(50% - 380px - 30px + 7px);
   top: 0;
 }
@@ -53,7 +64,7 @@ p {
   position: fixed;
   height: 100vh;
   width: 7px;
-  background: #3f3f3f;
+  background: $color-red;
   left: calc(50% + 380px + 17px);
   top: 0;
 }

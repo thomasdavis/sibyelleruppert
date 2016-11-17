@@ -5,7 +5,7 @@
 layout: home
 ---
 
-![image-title-here](/assets/images/portrait.png){:class="hero"}
+![image-title-here](http://res.cloudinary.com/dx3kbjr3g/image/fetch/f_auto/https://sibylleruppert.com/assets/images/portrait.jpg){:class="hero"}
 
 <div class="divider"></div>
 
